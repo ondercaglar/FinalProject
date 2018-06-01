@@ -31,13 +31,32 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // Specifies one flavor dimensions.
+    flavorDimensions "tier"
+
+    productFlavors {
+        free {
+            dimension "tier"
+            applicationId "com.udacity.gradle.builditbigger.free"
+        }
+        paid {
+            dimension "tier"
+            applicationId "com.udacity.gradle.builditbigger.paid"
+        }
+    }
+
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:27.1.1'
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+    freeImplementation 'com.google.android.gms:play-services-ads:15.0.1'
+
     implementation 'com.google.api-client:google-api-client:1.23.0'
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
