@@ -11,26 +11,46 @@
 
     <TextView
         android:id="@+id/instructions_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:gravity="center"
         android:text="@string/instructions" />
 
+
     <Button
-        android:id="@+id/launch_display_joke"
-        android:layout_width="wrap_content"
+        android:id="@+id/tell_joke_fromtask_btn"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/instructions_text_view"
-        android:onClick="tellJoke"
-        android:text="@string/button_text" />
+        android:onClick="tellJokeFromTask"
+        android:text="@string/button_text1" />
 
+    <Button
+        android:id="@+id/tell_joke_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tell_joke_fromtask_btn"
+        android:onClick="tellJoke"
+        android:text="@string/button_text2" />
 
 
     <Button
+        android:id="@+id/launch_display_joke_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tell_joke_btn"
+        android:onClick="launchJokeDisplayActivity"
+        android:text="@string/button_text3" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/launch_display_joke"
-        android:onClick="launchJokeDisplayActivity"
-        android:text="@string/button_text2" />
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/circular_progress_bar"/>
 
 
 </RelativeLayout>

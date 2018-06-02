@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Build it Bigger</string>
     <string name="instructions">Press the button for a delicious joke!</string>
-    <string name="button_text">Tell Joke</string>
-    <string name="button_text2">Display Joke on New Page</string>
+    <string name="button_text1">Tell Joke via GCE</string>
+    <string name="button_text2">Tell Joke from Java Library</string>
+    <string name="button_text3">Display Joke on New Page</string>
     <string name="action_settings">Settings</string>
 </resources>
