@@ -3,4 +3,6 @@
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="free_greeting">This is the free, ad supported version.</string>
 
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
 </resources>

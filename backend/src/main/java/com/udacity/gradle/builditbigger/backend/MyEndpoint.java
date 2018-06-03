@@ -41,7 +41,7 @@ public class MyEndpoint {
         String joke = jokeSource.getJoke();
 
         MyBean response = new MyBean();
-        response.setData(joke);
+        response.setData(joke + " via GCE");
 
         return response;
     }
